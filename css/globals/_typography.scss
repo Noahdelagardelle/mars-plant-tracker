@@ -1,0 +1,69 @@
+// Typography
+
+
+@font-face {
+    font-family: 'Sans Regular';
+    src:url('/fonts/IBMPlexSans-Regular.woff') format('woff');
+
+}
+@font-face {
+    font-family: 'Sans SemiBold';
+    src:url('/fonts/IBMPlexSans-SemiBold.woff') format('woff');
+}
+@font-face {
+    font-family: 'Mono Regular';
+    src:url('/fonts/IBMPlexMono-Regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'Mono SemiBold';
+    src:url('/fonts/IBMPlexMono-SemiBold.woff') format('woff');
+}
+
+%font-sans-regular {
+    font-family: 'Sans Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+%font-sans-semi {
+    font-family: 'Sans SemiBold', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+%font-mono-regular {
+    font-family: 'Mono Regular', 'Courier', monospace;
+}
+%font-mono-semi {
+    font-family: 'Mono SemiBold', 'Courier', monospace;
+}
+
+::selection {
+    // background-color: #3554bb;
+    // color: $color_white;
+}
+
+html {
+    -webkit-font-smoothing: antialiased; // Fix fatty fonts
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: regular;
+    line-height: 1.2;
+    text-rendering: optimizeLegibility;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+    @extend %font-mono-regular;
+}
+
+a {
+    color: inherit;
+}
+
+h1 {
+    font-size: 24px;
+    color: $color_dark_purple;
+    margin: 0;
+
+}
+
+h2 {
+    font-size: 18px;
+    color: $color_dark_purple;
+    margin-top: 60px;
+    max-width: 180px;
+    @extend %font-sans-regular;
+}
+
