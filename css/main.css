@@ -399,19 +399,19 @@ template {
 
 @font-face {
   font-family: 'Sans Regular';
-  src: url("/fonts/IBMPlexSans-Regular.woff") format("woff"); }
+  src: url("../fonts/IBMPlexSans-Regular.woff") format("woff"); }
 
 @font-face {
   font-family: 'Sans SemiBold';
-  src: url("/fonts/IBMPlexSans-SemiBold.woff") format("woff"); }
+  src: url("../fonts/IBMPlexSans-SemiBold.woff") format("woff"); }
 
 @font-face {
   font-family: 'Mono Regular';
-  src: url("/fonts/IBMPlexMono-Regular.woff") format("woff"); }
+  src: url("../fonts/IBMPlexMono-Regular.woff") format("woff"); }
 
 @font-face {
   font-family: 'Mono SemiBold';
-  src: url("/fonts/IBMPlexMono-SemiBold.woff") format("woff"); }
+  src: url("../fonts/IBMPlexMono-SemiBold.woff") format("woff"); }
 
 h2 {
   font-family: 'Sans Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
@@ -452,7 +452,7 @@ html {
       background-color: #FFFFFF; } }
 
 body {
-  background-image: url("/images/duotone.png");
+  background-image: url("../images/duotone.png");
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -630,7 +630,8 @@ body {
   height: 55px;
   line-height: 55px;
   margin-bottom: 10px;
-  font-size: 14px; }
+  font-size: 14px;
+  cursor: pointer; }
 
 .btn--post {
   background: linear-gradient(45deg, #5c58d7 0%, #374166 100%);
@@ -692,6 +693,9 @@ body {
     text-align: center;
     width: 30px; }
 
+.tray__plant {
+  cursor: pointer; }
+
 .row-numbers {
   display: flex;
   justify-content: space-around; }
@@ -714,7 +718,7 @@ body {
     right: 10px;
     bottom: 0;
     background-color: white;
-    background-image: url("/images/add-plant-btn.png");
+    background-image: url("../images/add-plant-btn.png");
     background-size: contain;
     background-repeat: no-repeat; }
 
@@ -765,7 +769,8 @@ body {
       right: 10px;
       padding: 10px;
       font-size: 24px;
-      opacity: .5; }
+      opacity: .5;
+      cursor: pointer; }
   .action-modal .plant-health {
     font-size: 14px;
     color: #5C58D7;
