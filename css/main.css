@@ -787,7 +787,8 @@ body {
     display: flex; }
   .action-modal .section-title {
     writing-mode: vertical-rl;
-    margin-right: 20px; }
+    margin-right: 20px;
+    max-width: 10px; }
   .action-modal .section-stats {
     display: flex;
     flex-direction: column;

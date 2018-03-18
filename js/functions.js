@@ -5,7 +5,7 @@ $(function () {
   });
 
   $('.empty-plant-plot').on( "click", function() {
-    $('.action-modal').addClass('open');
+    $('.action-modal__plant-health').addClass('open');
   });
 
   $('.overfolw__card--home').on( "click", function() {
